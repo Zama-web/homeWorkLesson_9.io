@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  background-color: #e5e5e5;
+  font-family: "Roboto Slab", serif;
+}
+
+div,
+ul,
+li {
+  background-color: white;
+}
+
+nav {
+  background-color: white;
+  color: #2c3e50;
+  margin: 0 5% 10px 5%;
+  width: 90%;
+}
+
+nav > ul {
+  height: 70px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 85px;
+  height: 35px;
+  background-color: white;
+  padding: 10px 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  background-color: white;
+}
+.pagePoints a {
+  transition: all 0.5s;
+  padding: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.pagePoints li:hover {
+  text-shadow: 5px 5px 10px black;
+  transform: translate(-2px, -2px);
+  background-color: #e5e5e5;
+}
+.media li {
+  margin-right: 10px;
+  right: 0;
+  cursor: pointer;
+}
+.media li:hover {
+  transform: translate(-1px, -1px);
+}
+
+.navBtn {
+  display: none;
+  border: 2px solid #2c3e50;
+  border-radius: 5px;
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .media {
+    display: none;
+  }
+  .pagePoints {
+    position: absolute;
+    display: block;
+    transform: translateX(-100%);
+    left: 0;
+    top: 60px;
+    background-color: #e67e22;
+  }
+  .navBtn {
+    display: flex;
+  }
+}
+
+// page-4
+
+.page_4 {
+  width: 90%;
+  margin-left: 5%;
+}
+.page_4 div,
+h1,
+h3 {
+  background-color: rgb(168, 61, 218);
+}
+
+.page4_h1 {
+  font-size: 35px;
+  color: white;
+  padding: 15px;
+}
+.page4_contents {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.page4_map {
+  display: flex;
+  width: 600px;
+  height: 450px;
+  padding: 5px;
+}
+#map {
+  width: 550px;
+  height: 400px;
+}
+.page4_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 5px;
+}
+.page4_info {
+  width: 450px;
+  height: 230px;
+  color: white;
+  font-size: 25px;
+}
+
+.page4_info:hover {
+  text-decoration: underline solid lightblue;
+}
+
+#btn {
+  background-color: red;
+  width: 450px;
+  height: 60px;
+  font-size: 35px;
+  cursor: pointer;
+  margin-top: 110px;
+  border-radius: 5px;
+}
