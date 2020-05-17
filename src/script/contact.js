@@ -12,11 +12,11 @@ function addModel() {
     let buttonElem = $('<button>');
     buttonElem.addClass('send');
 
-    labelEmail.text('Ваша почта');
+    labelEmail.text('</Ваша почта>');
     inputEmail.attr('type', 'email');
-    labelPhone.text('Ваш телефон');
+    labelPhone.text('</Ваш телефон>');
     inputPhone.attr('type', 'number');
-    labelProject.text('Коротко о вашем проекте');
+    labelProject.text('</Коротко о вашем проекте>');
     textareaProject.text();
     buttonElem.text('Отправить');
 

@@ -13,5 +13,13 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zama-web/homeWorkLesson_9.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zama-web/homeWorkLesson_9.io/issues"
+  },
+  "homepage": "https://github.com/Zama-web/homeWorkLesson_9.io#readme"
 }
