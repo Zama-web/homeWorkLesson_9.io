@@ -3,14 +3,16 @@
   padding: 0;
   border: 0;
   list-style: none;
-  background-color: #E5E5E5;
-  font-family: 'Roboto Slab', serif;
+  background-color: #e5e5e5;
+  font-family: "Roboto Slab", serif;
 }
 
-div, ul, li {
+div,
+ul,
+li,
+p {
   background-color: white;
 }
-
 
 nav {
   background-color: white;
@@ -22,11 +24,13 @@ nav {
 nav > ul {
   height: 70px;
 }
+
 nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   width: 85px;
   height: 35px;
@@ -35,10 +39,12 @@ nav ul {
   display: inline-block;
   cursor: pointer;
 }
+
 a {
   text-decoration: none;
   background-color: white;
 }
+
 .pagePoints a {
   transition: all 0.5s;
   padding: 10px;
@@ -49,14 +55,16 @@ a {
 .pagePoints li:hover {
   text-shadow: 5px 5px 10px black;
   transform: translate(-2px, -2px);
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
+
 .media li {
   margin-right: 10px;
   right: 0;
   cursor: pointer;
 }
-.media li:hover{
+
+.media li:hover {
   transform: translate(-1px, -1px);
 }
 
@@ -89,9 +97,6 @@ a {
   }
 }
 
-
-// Page-2 Projects ||||||||||||||||||||||||||
-
 .page_2 {
   margin: 0px 5%;
   width: 90%;
@@ -103,12 +108,14 @@ a {
   font-size: 50px;
   padding: 20px;
 }
+
 .page2_contents {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 5px;
   width: 96%;
 }
+
 @media (max-width: 650px) {
   .page2_contents {
     display: flex;
@@ -119,6 +126,7 @@ a {
     width: 350px;
   }
 }
+
 .page2_img {
   width: 550px;
 }
@@ -126,9 +134,11 @@ a {
 .block_img {
   padding: 20px;
 }
+
 img:hover {
   outline: 2px solid blue;
 }
+
 .block_right {
   display: flex;
   flex-direction: column;
@@ -137,49 +147,51 @@ img:hover {
   padding: 20px;
   width: 500px;
 }
+
 .menu {
   display: flex;
   width: 450px;
   height: 50px;
-
 }
+
 .menu li {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   width: 140px;
-  border: 1px solid rgb(110, 110, 110);
+  border: 1px solid #6e6e6e;
   padding: 10px;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgb(133, 130, 130);
-
+  box-shadow: 5px 5px 5px #858282;
 }
-.menu li+li {
+
+.menu li + li {
   margin-left: 30px;
 }
 
 .menu li:hover {
   box-shadow: none;
   transform: translate(2px, 2px);
-  background-color: rgb(164, 55, 214);
+  background-color: #a437d6;
 }
+
 .page2_text {
   padding: 10px;
   margin-top: 50px;
   width: 430px;
   height: 365px;
-  border: 1px solid rgb(133, 130, 130);
+  border: 1px solid #858282;
   text-align: justify;
   font-size: 12px;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
+  padding: 5px;
 }
-p:hover{
+
+p:hover {
   text-decoration: underline;
   outline: 1px solid blue;
 }
-
