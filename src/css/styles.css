@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
 
 div,
 ul,
-li,
+h2,
 p {
   background-color: white; }
 
@@ -122,29 +123,29 @@ img:hover {
   padding: 20px;
   width: 500px; }
 
-.menu {
+/*
+  Блок Пункты и Тексты
+*/
+.page2_points {
   display: flex;
   width: 450px;
-  height: 50px; }
+  cursor: pointer; }
 
-.menu li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  width: 140px;
+h2 {
+  width: 130px;
+  box-shadow: 5px 5px 5px #858282;
   border: 1px solid #6e6e6e;
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px #858282; }
+  font-size: 30px;
+  text-align: center;
+  color: #034903; }
 
-.menu li + li {
+.page2_points h2 + h2 {
   margin-left: 30px; }
 
-.menu li:hover {
+h2:hover {
   box-shadow: none;
   transform: translate(2px, 2px);
-  background-color: #a437d6; }
+  background-color: #ba46f0; }
 
 .page2_text {
   padding: 10px;
