@@ -67,7 +67,8 @@ a {
   height: 35px;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: white; }
 
 @media (max-width: 650px) {
   .media {

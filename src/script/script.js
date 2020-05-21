@@ -12,9 +12,7 @@ $('.navBtn').on('click', function () {
     $('.media').css('transform', 'translateX(-100%)');
   }
   navOpen = !navOpen;
-
 })
-
 $(window).on('resize', function () {
   if ($(window).width() > 650) {
     $('.pagePoints').css('transition', '');

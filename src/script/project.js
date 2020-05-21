@@ -1,3 +1,32 @@
+let navOpen = false;
+
+$('.navBtn').on('click', function () {
+    $('.pagePoints').css('transition', 'transform 0.5s');
+    $('.media').css('transition', 'transform 0.5s');
+
+    if (!navOpen) {
+        $('.pagePoints').css('transform', 'translateX(0)');
+        $('.media').css('transform', 'translateX(0)');
+    } else {
+        $('.pagePoints').css('transform', 'translateX(-100%)');
+        $('.media').css('transform', 'translateX(-100%)');
+    }
+    navOpen = !navOpen;
+
+})
+
+$(window).on('resize', function () {
+    if ($(window).width() > 650) {
+        $('.pagePoints').css('transition', '');
+        $('.pagePoints').css('transform', '');
+        $('.media').css('transition', '');
+        $('.media').css('transform', '');
+    }
+})
+
+
+// slides 
+
 let p3_slides = $('#page3_contents');
 let width = p3_slides.width();
 let height = p3_slides.height();
@@ -27,7 +56,7 @@ function left_content() {
     changeActivePoints()
 }
 
-function changeActivePoints(){
+function changeActivePoints() {
     $('.points li').removeClass('active');
     $('.points li').eq(page).addClass('active');
 }
@@ -35,7 +64,7 @@ function changeActivePoints(){
 $('.go-left').on('click', left_content);
 $('.go-right').on('click', right_content);
 
-$('.points li').on('click', function(){
+$('.points li').on('click', function () {
     let cur = $(this);
 
     $('.points li').removeClass('active')
@@ -43,6 +72,6 @@ $('.points li').on('click', function(){
 
     let index = $('.points li').index(cur);
     page = index;
-    $('.screen .slides').animate({ 'left': `-${index* width}px` }, SPEED);
+    $('.screen .slides').animate({ 'left': `-${index * width}px` }, SPEED);
 });
 

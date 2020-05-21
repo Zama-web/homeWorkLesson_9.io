@@ -1,3 +1,31 @@
+let navOpen = false;
+
+$('.navBtn').on('click', function () {
+    $('.pagePoints').css('transition', 'transform 0.5s');
+    $('.media').css('transition', 'transform 0.5s');
+
+    if (!navOpen) {
+        $('.pagePoints').css('transform', 'translateX(0)');
+        $('.media').css('transform', 'translateX(0)');
+    } else {
+        $('.pagePoints').css('transform', 'translateX(-100%)');
+        $('.media').css('transform', 'translateX(-100%)');
+    }
+    navOpen = !navOpen;
+})
+
+$(window).on('resize', function () {
+    if ($(window).width() > 650) {
+        $('.pagePoints').css('transition', '');
+        $('.pagePoints').css('transform', '');
+        $('.media').css('transition', '');
+        $('.media').css('transform', '');
+    }
+})
+
+
+// page contact 
+
 let page4_model = $('.page4_model');
 
 function addModel() {

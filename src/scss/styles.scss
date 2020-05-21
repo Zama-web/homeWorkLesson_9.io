@@ -78,6 +78,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: white;
 }
 
 @media (max-width: 650px) {
@@ -172,7 +173,7 @@ h2:hover {
   box-shadow: none;
   transform: translate(2px, 2px);
   background-color: #ba46f0;
-} 
+}
 
 .page2_text {
   padding: 10px;
@@ -191,4 +192,3 @@ p:hover {
   text-decoration: underline;
   outline: 1px solid blue;
 }
-
