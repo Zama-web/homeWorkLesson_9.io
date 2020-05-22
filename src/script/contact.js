@@ -8,10 +8,11 @@ $('.navBtn').on('click', function () {
         $('.pagePoints').css('transform', 'translateX(0)');
         $('.media').css('transform', 'translateX(0)');
     } else {
-        $('.pagePoints').css('transform', 'translateX(-100%)');
+        $('.pagePoints').css('transform', 'translateX(-140%)');
         $('.media').css('transform', 'translateX(-100%)');
     }
     navOpen = !navOpen;
+
 })
 
 $(window).on('resize', function () {
@@ -23,8 +24,6 @@ $(window).on('resize', function () {
     }
 })
 
-
-// page contact 
 
 let page4_model = $('.page4_model');
 

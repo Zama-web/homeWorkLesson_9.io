@@ -8,11 +8,13 @@ $('.navBtn').on('click', function () {
     $('.pagePoints').css('transform', 'translateX(0)');
     $('.media').css('transform', 'translateX(0)');
   } else {
-    $('.pagePoints').css('transform', 'translateX(-100%)');
+    $('.pagePoints').css('transform', 'translateX(-140%)');
     $('.media').css('transform', 'translateX(-100%)');
   }
   navOpen = !navOpen;
+
 })
+
 $(window).on('resize', function () {
   if ($(window).width() > 650) {
     $('.pagePoints').css('transition', '');
@@ -40,7 +42,7 @@ page2_text.append(t3);
 // Default page
 
 point1.css({
-  backgroundColor: '#ba46f0',
+  backgroundColor: 'springgreen',
   boxShadow: 'none'
 })
 t2.css('display', 'none');
@@ -49,17 +51,18 @@ t3.css('display', 'none');
 // Процесс при нажатии
 
 // Нажали пункт "Цели"
+
 point1.on('click', function () {
   $(this).css({
     boxShadow: 'none',
-    backgroundColor: '#ba46f0'
+    backgroundColor: 'springgreen'
   })
   point2.css({
-    backgroundColor: 'white',
+    backgroundColor: 'darkturquoise',
     boxShadow: '5px 5px 5px #858282'
   })
   point3.css({
-    backgroundColor: 'white',
+    backgroundColor: 'darkturquoise',
     boxShadow: '5px 5px 5px #858282'
   })
   t1.css('display', 'flex')
@@ -72,14 +75,14 @@ point1.on('click', function () {
 point2.on('click', function () {
   $(this).css({
     boxShadow: 'none',
-    backgroundColor: '#ba46f0'
+    backgroundColor: 'springgreen'
   })
   point1.css({
-    backgroundColor: 'white',
+    backgroundColor: 'darkturquoise',
     boxShadow: '5px 5px 5px #858282'
   })
   point3.css({
-    backgroundColor: 'white',
+    backgroundColor: 'darkturquoise',
     boxShadow: '5px 5px 5px #858282'
   })
   t1.css('display', 'none');
@@ -92,14 +95,14 @@ point2.on('click', function () {
 point3.on('click', function () {
   $(this).css({
     boxShadow: 'none',
-    backgroundColor: '#ba46f0'
+    backgroundColor: 'springgreen'
   })
   point1.css({
-    backgroundColor: 'white',
+    backgroundColor: 'darkturquoise',
     boxShadow: '5px 5px 5px #858282'
   })
   point2.css({
-    backgroundColor: 'white',
+    backgroundColor: 'darkturquoise',
     boxShadow: '5px 5px 5px #858282'
   })
   t1.css('display', 'none');
@@ -109,7 +112,28 @@ point3.on('click', function () {
 
 
 
-// Test через массив - Не удался :-(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let data = [
 //   {

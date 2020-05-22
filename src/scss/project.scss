@@ -3,7 +3,7 @@
   padding: 0;
   border: 0;
   list-style: none;
-  background-color: #e5e5e5;
+  background-color: #1e213a;
   font-family: "Roboto Slab", serif;
 }
 
@@ -11,12 +11,13 @@ div,
 ul,
 li,
 h1,
+h2,
 p {
-  background-color: white;
+  background-color: darkturquoise;
 }
 
 nav {
-  background-color: white;
+  background-color: darkturquoise;
   color: #2c3e50;
   margin: 0 5% 10px 5%;
   width: 90%;
@@ -35,7 +36,7 @@ nav ul {
 .logo {
   width: 85px;
   height: 35px;
-  background-color: white;
+  background-color: darkturquoise;
   padding: 10px 5px;
   display: inline-block;
   cursor: pointer;
@@ -43,20 +44,20 @@ nav ul {
 
 a {
   text-decoration: none;
-  background-color: white;
+  background-color: darkturquoise;
 }
 
 .pagePoints a {
   transition: all 0.5s;
-  padding: 10px;
-  font-size: 19px;
+  padding: 5px;
+  font-size: 22px;
   cursor: pointer;
+  color: white;
 }
 
 .pagePoints li:hover {
   text-shadow: 5px 5px 10px black;
   transform: translate(-2px, -2px);
-  background-color: #e5e5e5;
 }
 
 .media li {
@@ -73,31 +74,35 @@ a {
   display: none;
   border: 2px solid #2c3e50;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 25px;
   width: 35px;
   height: 35px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: darkturquoise;
+  margin-right: 5px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   .media {
     display: none;
   }
   .pagePoints {
     position: absolute;
-    display: block;
-    transform: translateX(-100%);
-    left: 0;
-    top: 60px;
-    background-color: #e67e22;
+    z-index: 2;
+    transform: translateX(-140%);
+    left: 5%;
+    top: 70px;
   }
   .navBtn {
     display: flex;
   }
 }
 
+/*
+    Страница - 3
+*/
 .page_3 {
   margin: 0 5%;
   padding: 10px;
@@ -122,17 +127,10 @@ a {
   outline: 2px solid grey;
   padding: 30px;
 }
-@media(max-width: 1100px) {
-  .line_block {
-    width: 500px;
-  }
-}
-
 
 #page3_contents {
   width: 900px;
   height: 700px;
-
 }
 .screen {
   overflow: hidden;
@@ -149,7 +147,6 @@ a {
   list-style: none;
   justify-content: center;
   margin-top: 30px;
-
 }
 
 .page3_block_img_a {
@@ -168,15 +165,15 @@ a {
   padding: 10px;
   height: 650px;
 }
-p{
+p {
   text-align: justify;
   font-size: 14px;
 }
-p:hover{
+p:hover {
   outline: 2px solid rgb(95, 95, 224);
   text-decoration: underline;
 }
-img:hover{
+img:hover {
   outline: 2px solid rgb(95, 95, 224);
 }
 
@@ -206,14 +203,13 @@ img:hover{
 
 .points {
   left: 50%;
-  bottom: 10px;
+  bottom: 5px;
   position: absolute;
   justify-content: space-between;
   transform: translateX(-50%);
   display: flex;
-
 }
-.points li{
+.points li {
   list-style: none;
   background-color: lightgreen;
   border: 1px solid black;
@@ -222,15 +218,32 @@ img:hover{
   height: 30px;
   cursor: pointer;
 }
-.points li+li {
+.points li + li {
   margin-left: 10px;
 }
 
 .points li.active {
   border: 2px solid black;
-  background-color: darkmagenta;
+  background-color: darkblue;
   width: 26px;
   height: 26px;
+}
 
+@media (max-width: 1100px) {
+  .line_block {
+    width: 680px;
+  }
+}
 
+@media (max-width: 850px) {
+  .line_block {
+    width: 500px;
+  }
+  .slides li {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .trigger {
+    font-size: 25px;
+  }
 }

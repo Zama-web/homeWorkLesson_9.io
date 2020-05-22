@@ -3,19 +3,21 @@
   padding: 0;
   border: 0;
   list-style: none;
-  background-color: #e5e5e5;
+  background-color: #1e213a;
   font-family: "Roboto Slab", serif;
 }
 
 div,
 ul,
+li,
+h1,
 h2,
 p {
-  background-color: white;
+  background-color: darkturquoise;
 }
 
 nav {
-  background-color: white;
+  background-color: darkturquoise;
   color: #2c3e50;
   margin: 0 5% 10px 5%;
   width: 90%;
@@ -34,7 +36,7 @@ nav ul {
 .logo {
   width: 85px;
   height: 35px;
-  background-color: white;
+  background-color: darkturquoise;
   padding: 10px 5px;
   display: inline-block;
   cursor: pointer;
@@ -42,20 +44,20 @@ nav ul {
 
 a {
   text-decoration: none;
-  background-color: white;
+  background-color: darkturquoise;
 }
 
 .pagePoints a {
   transition: all 0.5s;
-  padding: 10px;
-  font-size: 19px;
+  padding: 5px;
+  font-size: 22px;
   cursor: pointer;
+  color: white;
 }
 
 .pagePoints li:hover {
   text-shadow: 5px 5px 10px black;
   transform: translate(-2px, -2px);
-  background-color: #e5e5e5;
 }
 
 .media li {
@@ -72,31 +74,35 @@ a {
   display: none;
   border: 2px solid #2c3e50;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 25px;
   width: 35px;
   height: 35px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
+  background-color: darkturquoise;
+  margin-right: 5px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   .media {
     display: none;
   }
   .pagePoints {
     position: absolute;
-    display: block;
-    transform: translateX(-100%);
-    left: 0;
-    top: 60px;
-    background-color: #e67e22;
+    z-index: 2;
+    transform: translateX(-140%);
+    left: 5%;
+    top: 70px;
   }
   .navBtn {
     display: flex;
   }
 }
+
+/*
+  Страница - 2
+*/
 
 .page_2 {
   margin: 0px 5%;
@@ -105,7 +111,7 @@ a {
 }
 
 .page_2 h1 {
-  background-color: white;
+  background-color: darkturquoise;
   font-size: 50px;
   padding: 20px;
 }
@@ -115,17 +121,6 @@ a {
   flex-wrap: wrap;
   margin: 20px 5px;
   width: 96%;
-}
-
-@media (max-width: 650px) {
-  .page2_contents {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-  }
-  .page2_img {
-    width: 350px;
-  }
 }
 
 .page2_img {
@@ -162,9 +157,8 @@ h2 {
   width: 130px;
   box-shadow: 5px 5px 5px #858282;
   border: 1px solid #6e6e6e;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
-  color: rgb(3, 73, 3);
 }
 .page2_points h2 + h2 {
   margin-left: 30px;
@@ -191,4 +185,21 @@ p {
 p:hover {
   text-decoration: underline;
   outline: 1px solid blue;
+}
+
+@media (max-width: 650px) {
+  .page_2 {
+    height: 1350px;
+  }
+  .page2_contents {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page2_img,
+  .page2_points,
+  .block_right,
+  .page2_text {
+    width: 390px;
+    height: auto;
+  }
 }

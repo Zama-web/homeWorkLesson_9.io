@@ -3,17 +3,21 @@
   padding: 0;
   border: 0;
   list-style: none;
-  background-color: #e5e5e5;
+  background-color: #1e213a;
+  font-family: "Roboto Slab", serif;
 }
 
 div,
 ul,
-li {
-  background-color: white;
+li,
+h1,
+h2,
+p {
+  background-color: darkturquoise;
 }
 
 nav {
-  background-color: white;
+  background-color: darkturquoise;
   color: #2c3e50;
   margin: 0 5% 10px 5%;
   width: 90%;
@@ -32,7 +36,7 @@ nav ul {
 .logo {
   width: 85px;
   height: 35px;
-  background-color: white;
+  background-color: darkturquoise;
   padding: 10px 5px;
   display: inline-block;
   cursor: pointer;
@@ -40,21 +44,21 @@ nav ul {
 
 a {
   text-decoration: none;
-  background-color: white;
-  font-family: "Roboto Slab", serif;
+  background-color: darkturquoise;
 }
 
 .pagePoints a {
   transition: all 0.5s;
-  padding: 10px;
-  font-size: 19px;
+  padding: 5px;
+  font-size: 22px;
   cursor: pointer;
+  color: white;
 }
 
 .pagePoints li:hover {
   text-shadow: 5px 5px 10px black;
   transform: translate(-2px, -2px);
-  background-color: #e5e5e5;
+  background-color: #86d38d;
 }
 
 .media li {
@@ -71,25 +75,26 @@ a {
   display: none;
   border: 2px solid #2c3e50;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 25px;
   width: 35px;
   height: 35px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: darkturquoise;
+  margin-right: 5px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   .media {
     display: none;
   }
   .pagePoints {
     position: absolute;
-    display: block;
-    transform: translateX(-100%);
-    left: 0;
-    top: 60px;
-    background-color: #e67e22;
+    /* display: block; */
+    transform: translateX(-140%);
+    left: 5%;
+    top: 70px;
   }
   .navBtn {
     display: flex;
@@ -108,12 +113,12 @@ a {
 .page_4 div,
 h1,
 h3 {
-  background-color: #a83dda;
+  background-color: #a83e7d;
 }
 
 .page4_h1 {
   font-size: 35px;
-  color: white;
+  color: darkturquoise;
   padding: 15px;
 }
 
@@ -121,6 +126,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
+  justify-content: center;
 }
 
 .page4_map {
@@ -128,10 +134,17 @@ h3 {
   width: 600px;
   height: 450px;
   padding: 5px;
+  margin-right: 80px;
+}
+@media (max-width: 680px) {
+  .page4_map {
+    width: 450px;
+    margin-right: 0;
+  }
 }
 
 iframe {
-  width: 550px;
+  width: 600px;
   height: 400px;
 }
 
@@ -139,15 +152,15 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  width: 480px;
   padding: 5px;
 }
 
 .page4_info {
-  width: 450px;
-  height: 230px;
-  color: white;
-  font-size: 25px;
+  width: 420px;
+  height: auto;
+  color: darkturquoise;
+  font-size: 22px;
 }
 
 .page4_info:hover {
@@ -155,12 +168,12 @@ iframe {
 }
 
 #btn {
-  background-color: red;
-  width: 450px;
+  background-color: darkturquoise;
+  width: 420px;
   height: 60px;
   font-size: 35px;
   cursor: pointer;
-  margin-top: 110px;
+  margin-top: 60px;
   border-radius: 5px;
 }
 
@@ -182,7 +195,8 @@ iframe {
   box-shadow: 0 0 10px;
   width: 80%;
   height: 80vh;
-  background-color: white;
+  background-color: darkturquoise;
+  padding: 5px;
 }
 .page4_form {
   width: 50%;
@@ -197,7 +211,7 @@ form,
 label,
 input,
 textarea {
-  background-color: white;
+  background-color: darkturquoise;
   margin-top: 10px;
 }
 input {
@@ -221,5 +235,4 @@ textarea {
   color: black;
   font-size: 30px;
   cursor: pointer;
-
 }
